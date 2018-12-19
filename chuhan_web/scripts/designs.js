@@ -26,7 +26,9 @@
     });
 // 点击右箭头滑动缩略图
     $('#scroll_right').mousedown(function(){
-      $('ul.designs').animate({scrollLeft:48},500);
+      var x=$('ul.designs li:last').index();
+      var y=x*106-906;
+      $('ul.designs').animate({scrollLeft:y},500);
     });
     $('#scroll_right').mouseup(function(){
       $('ul.designs').stop();
@@ -37,4 +39,16 @@
     });
     $('#scroll_left').mouseup(function(){
       $('ul.designs').stop();
+    });
+
+    $('.previous').hover(function(){
+      $(this).children('#nav_previous').stop().animate({left:'-5px', opacity:'0.6'},300);
+    },function(){
+      $(this).children('#nav_previous').stop().animate({left:'0px', opacity:'1'},300);
+    });
+
+    $('.next').hover(function(){
+      $(this).children('#nav_next').stop().animate({right:'-5px', opacity:'0.6'},300);
+    },function(){
+      $(this).children('#nav_next').stop().animate({right:'0px', opacity:'1'},300);
     });
