@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<script src="./scripts/jQuery_3.3.1.js"></script>
+<style media="screen">
+  img.thumb{
+    width: 94px;
+  }
+  ul.designs{
+    font-size: 0;
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  li.designs{
+    display: inline-block;
+    margin-right: 12px;
+    width: 94px;
+    list-style: none;
+  }
+  div.thumb_box{
+    overflow: hidden;
+    float: left;
+    margin-right: 12px;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+    align-items:center;
+    justify-content:center;
+    transform: translateY(-50px);
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  div.thumb_box:hover{
+    opacity: 0.5;
+  }
+  div.thumb_box_down{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  div.design_display{
+    position: relative;
+    margin: 20px auto 12px;
+    width: 1000px;
+    height: 562px;
+    background-color: lightgrey;
+    overflow: hidden;
+  }
+  img.display{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  img.active{
+    opacity: 1;
+  }
+  li.designs::before{
+    z-index: 1;
+    position: relative;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #CCC;
+  }
+  li.designs_hover::before{
+    background-color: #333;
+  }
+  li.designs_chosen::before{
+    background-color: #333;
+  }
+  div.scroll_box{
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: translateY(-50px);
+    transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  div.scroll_box_down{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  div.thumb_nav{
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+  }
+  .no_scroll_design{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+  }
+</style>
+
+</head>
+<body>
+  <div>
+    <div class="design_display">
+      <img class="display active" src="./images/caicloud-ui/caicloud_1.jpg" alt="">
+      <img class="display" src="./images/caicloud-ui/caicloud_11.png" alt="">
+      <img class="display" src="./images/caicloud-ui/caicloud_8.png" alt="">
+    </div>
+    <div class="thumb_nav">
+      <div class="no_scroll_design">
+        <ul class="designs" id="thumbnail">
+          <li class="designs designs_chosen">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_1.jpg" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_11.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+          <li class="designs">
+            <div class="thumb_box">
+              <img class="thumb" src="./images/caicloud-ui/caicloud_8.png" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="scroll_box" id="scroll_right" style="right:0"></div>
+      <div class="scroll_box" id="scroll_left" style="left:0"></div>
+    </div>
+  </div>
+
+  <script>
+  //缩略图 hover 标重
+    $('li.designs').hover(function(){
+      $(this).addClass('designs_hover');
+    },function(){
+      $(this).removeClass('designs_hover');
+    });
+
+  // 缩略图 hover 下滑
+    $('div.thumb_nav').hover(function(){
+      $('.thumb_box').addClass('thumb_box_down');
+      $('.scroll_box').addClass('scroll_box_down');
+    },function(){
+      $('.thumb_box').removeClass('thumb_box_down');
+      $('.scroll_box').removeClass('scroll_box_down');
+    });
+
+  // 缩略图点击标重
+    $('li.designs').click(function(){
+      $('li.designs').removeClass('designs_chosen');
+      $(this).addClass('designs_chosen');
+    });
+  // 点击缩略图切换大图
+      $('li.designs').click(function(){
+        $('.design_display').children('img').removeClass('active');
+        $('.design_display').children('img').eq($(this).index()).addClass('active');
+      });
+  // 点击右箭头滑动缩略图
+      $('#scroll_right').mousedown(function(){
+        $('ul.designs').animate({scrollLeft:48},500);
+      });
+      $('#scroll_right').mouseup(function(){
+        $('ul.designs').stop();
+      });
+  // 点击左箭头滑动缩略图
+      $('#scroll_left').mousedown(function(){
+        $('ul.designs').animate({scrollLeft:0},500);
+      });
+      $('#scroll_left').mouseup(function(){
+        $('ul.designs').stop();
+      });
+  </script>
+
+</body>

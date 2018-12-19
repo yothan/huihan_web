@@ -1,9 +1,5 @@
 $(function(){
 
-  // banner 文字加载动画
-  $('#motto-bg').animate({top:'208px',opacity:'0.8'},500);
-  $('#motto').delay(0).animate({top:'100px',opacity:'1'},700,"swing");
-
   // 点击导航栏定位滚动条
   var design_top = $('#design').offset().top;
   $('#nav-design').click(function () {
@@ -12,51 +8,35 @@ $(function(){
 
   var photo_top = $('#photo').offset().top;
   $('#nav-photo').click(function () {
-    $('html,body').animate({scrollTop:photo_top},500);
+    $('html,body').animate({scrollTop:photo_top},700);
   });
 
-  var profile_top = $('#profile').offset().top;
-  $('#nav-profile').click(function () {
-    $('html,body').animate({scrollTop:profile_top},500);
+  var aboutme_top = $('#aboutme').offset().top;
+  $('#nav-aboutme').click(function () {
+    $('html,body').animate({scrollTop:aboutme_top},900);
   });
-
-  // 刷新页面返回顶部
-  // window.onload = function(){setTimeout(function(){$(window).scrollTop(0)},10);}
 
   // hover 项目放大图片，解决文字遮挡问题
-  $('#mix_b1').hover(function(){
-    $('#cover_b1').css("transform","scale(1.1)");
+  $('.mix').hover(function(){
+    $(this).children('.design_cover').addClass('design_cover_hover');
+    $(this).children('.pic_cover').addClass('pic_cover_hover');
+    $(this).children('p.design_cover_title').stop().animate({bottom:'140px', opacity:'1'},500);
+    $(this).children('p.cover_content').stop().animate({bottom:'164px', opacity:'0.8'},500);
   },function(){
-    $('#cover_b1').css("transform","scale(1)");
+    $(this).children('.design_cover').removeClass('design_cover_hover');
+    $(this).children('.pic_cover').removeClass('pic_cover_hover');
+    $(this).children('p.design_cover_title').stop().animate({bottom:'100px', opacity:'0'},500);
+    $(this).children('p.cover_content').stop().animate({bottom:'110px', opacity:'0'},500);
   });
 
-  $('#mix_b2').hover(function(){
-    $('#cover_b2').css("transform","scale(1.1)");
-  },function(){
-    $('#cover_b2').css("transform","scale(1)");
-  });
-
-  $('#mix_b3').hover(function(){
-    $('#cover_b3').css("transform","scale(1.1)");
-  },function(){
-    $('#cover_b3').css("transform","scale(1)");
-  });
-
-  $('#mix_b4').hover(function(){
-    $('#cover_b4').css("transform","scale(1.1)");
-  },function(){
-    $('#cover_b4').css("transform","scale(1)");
-  });
-
-  $('#mix_b5').hover(function(){
-    $('#cover_b5').css("transform","scale(1.1)");
-  },function(){
-    $('#cover_b5').css("transform","scale(1)");
-  });
-
-  $('#mix_b6').hover(function(){
-    $('#cover_b6').css("transform","scale(1.1)");
-  },function(){
-    $('#cover_b6').css("transform","scale(1)");
-  });
 });
+
+// 首页文字动画
+function motto_move(){
+    $('#motto-bg').delay(500).animate({paddingTop:'90px',opacity:'0.8'},700);
+    $('#motto').delay(500).animate({paddingTop:'120px',opacity:'1'},700);
+  };
+$('#header_pre').load(motto_move());
+
+// 刷新页面返回顶部
+$('html,body').onload = function(){$(window).scrollTop(0);}
