@@ -19,11 +19,13 @@
     $('li.designs').removeClass('designs_chosen');
     $(this).addClass('designs_chosen');
   });
+
 // 点击缩略图切换大图
     $('li.designs').click(function(){
       $('.design_display').children('img').removeClass('active');
       $('.design_display').children('img').eq($(this).index()).addClass('active');
     });
+
 // 点击右箭头滑动缩略图
     $('#scroll_right').mousedown(function(){
       var x=$('ul.designs li:last').index();
@@ -33,6 +35,7 @@
     $('#scroll_right').mouseup(function(){
       $('ul.designs').stop();
     });
+
 // 点击左箭头滑动缩略图
     $('#scroll_left').mousedown(function(){
       $('ul.designs').animate({scrollLeft:0},500);
@@ -41,6 +44,7 @@
       $('ul.designs').stop();
     });
 
+// 点击底部导航小箭头漂移
     $('.previous').hover(function(){
       $(this).children('#nav_previous').stop().animate({left:'-5px', opacity:'0.6'},300);
     },function(){

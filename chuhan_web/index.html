@@ -7,6 +7,7 @@
   <meta name="keywords" content="ChuHan,初晗,Designer,Design">
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <script src="./scripts/jQuery_3.3.1.js"></script>
+  <script src="./scripts/jquery-ui.min.js"></script>
   <title> 2018 | HuiHan </title>
 </head>
 <body>
@@ -54,7 +55,7 @@
       <p class="sub-title"> Works. </p>
     </div>
     <div class="no_scroll">
-      <div class="pic">
+      <div class="pic" id="design_list">
         <a href="designs/caicloud_ui.html">
           <div class="mix">
             <div class="design_cover" alt="才云后台" style="background-image:url('images/design_cover_1.jpg')">
@@ -63,44 +64,60 @@
             <p class="cover_content"> Web 后台设计, Ant Design 云计算 <br> 行业落地实践 </p>
           </div>
         </a>
-        <div class="mix">
-          <div class="design_cover" alt="萤石云视频" style="background-image:url('images/design_cover_2.jpg')">
+        <a href="#">
+          <div class="mix">
+            <div class="design_cover" alt="萤石云视频" style="background-image:url('images/design_cover_2.jpg')">
+            </div>
+            <p class="design_cover_title"> Ezviz Video </p>
+            <p class="cover_content"> 萤石云视频 App UI，提供数字化安 <br> 防及智能家居服务 </p>
           </div>
-          <p class="design_cover_title"> Ezviz Video </p>
-          <p class="cover_content"> 萤石云视频 App UI，提供数字化安 <br> 防及智能家居服务 </p>
-        </div>
-        <div class="mix">
-          <div class="design_cover" alt="咖啡时间" style="background-image:url('images/design_cover_3.jpg')">
+        </a>
+        <a href="#">
+          <div class="mix">
+            <div class="design_cover" alt="咖啡时间" style="background-image:url('images/design_cover_3.jpg')">
+            </div>
+            <p class="design_cover_title"> Coffee Time </p>
+            <p class="cover_content"> 咖啡时间，一款在线咖啡消费 App， <br> 旨在提供高品质现磨咖啡</p>
           </div>
-          <p class="design_cover_title"> Coffee Time </p>
-          <p class="cover_content"> 咖啡时间，一款在线咖啡消费 App， <br> 旨在提供高品质现磨咖啡</p>
-        </div>
-        <div class="mix">
-          <div class="design_cover" alt="品牌设计" style="background-image:url('images/design_cover_4.jpg')">
+        </a>
+        <a href="#">
+          <div class="mix">
+            <div class="design_cover" alt="品牌设计" style="background-image:url('images/design_cover_4.jpg')">
+            </div>
+            <p class="design_cover_title"> 品牌设计 </p>
+            <p class="cover_content"> 才云科技 logo Redesign，“为每一 <br> 次微小而美好的改变而努力” </p>
           </div>
-          <p class="design_cover_title"> 品牌设计 </p>
-          <p class="cover_content"> 才云科技 logo Redesign，“为每一 <br> 次微小而美好的改变而努力” </p>
-        </div>
-        <div class="mix">
-          <div class="design_cover" alt="网页设计" style="background-image:url('images/design_cover_5.jpg')">
+        </a>
+        <a href="#">
+          <div class="mix">
+            <div class="design_cover" alt="网页设计" style="background-image:url('images/design_cover_5.jpg')">
+            </div>
+            <p class="design_cover_title"> 网页设计 </p>
+            <p class="cover_content"> Caicloud 官网设计，配合新产品发 <br> 布进行形象升级 </p>
           </div>
-          <p class="design_cover_title"> 网页设计 </p>
-          <p class="cover_content"> Caicloud 官网设计，配合新产品发 <br> 布进行形象升级 </p>
-        </div>
-        <div class="mix">
-          <div class="design_cover" alt="运营设计" style="background-image:url('images/design_cover_6.jpg')">
+        </a>
+        <a href="#">
+          <div class="mix">
+            <div class="design_cover" alt="运营设计" style="background-image:url('images/design_cover_6.jpg')">
+            </div>
+            <p class="design_cover_title"> 运营设计 </p>
+            <p class="cover_content"> 配合运营的一系列平面设计，包括 <br> 展会活动物料，微信海报等 </p>
           </div>
-          <p class="design_cover_title"> 运营设计 </p>
-          <p class="cover_content"> 配合运营的一系列平面设计，包括 <br> 展会活动物料，微信海报等 </p>
-        </div>
+        </a>
+      </div>
+    </div>
+    <div class="drag_box" id="drag_box_1">
+      <div class="drag" id="drag_1">
       </div>
     </div>
     <div class="comment">
       <p class="comment"> 大处着眼，小处着手。 </p>
+      <p class="no_margin describe" style="float:left"> Focus on the whole，Start on the detail. </p>
+      <p class="no_margin describe" style="float:right"> 2016 - 2018 </p>
     </div>
   </div>
   <div class="para" id="photo">
-    <div class="content title">
+    <div class="content title" style="margin-top:60px">
       <h1 class="sub-title"> 摄影 </h1>
       <p class="sub-title"> Photos. </p>
     </div>
@@ -138,32 +155,43 @@
         </div>
       </div>
     </div>
+    <div class="drag_box" id="drag_box_2">
+      <div class="drag">
+      </div>
+    </div>
     <div class="comment">
       <p class="comment"> 胶片定格回忆，温暖记在心里。 </p>
+      <p class="no_margin describe" style="float:left"> Memory in the film， Warm in the heart. </p>
+      <p class="no_margin describe" style="float:right"> 2016 - 2018 </p>
     </div>
   </div>
   <div class="para" id="aboutme">
-    <div class="content title">
+    <div class="content title" style="margin-top:60px">
       <h1 class="sub-title"> 关于我 </h1>
       <p class="sub-title"> About me. </p>
     </div>
     <div class="content">
       <div class="profile">
-        <img class="profile" src="./images/personal-pic@2x.jpg" alt="personal picture">
+        <img style="height:200px" src="./images/yothan@2x.jpg" alt="personal picture">
+        <div class="explain">
+          <p class="explain">“灰” 取自光，不黑不白，无喜无伤，和光同尘。</p>
+          <p class="explain" style="margin-top:51px">“晗” 是希望，如果灰是迷茫，永夜初晗便是指引人继续走下去的力量。</p>
+        </div>
       </div>
       <div class="profile-text">
-        <p class="name"> 灰晗 </p>
-        <div style="height:42px; opacity:1">
-          <p class="fl"> 90后 </p>
-          <p class="fl interval"></p>
-          <p class="fl"> 江南人 </p>
-          <p class="fl interval"></p>
-          <p class="fl"> 互联网设计师 </p>
+        <div class="left">
+          <p class="name"> 灰晗 </p>
+          <div style="height:16px">
+            <p class="fl"> 90后 </p>
+            <p class="fl" style="margin:0 20px"> | </p>
+            <p class="fl"> 江南人 </p>
+            <p class="fl" style="margin:0 20px"> | </p>
+            <p class="fl"> 互联网设计师 </p>
+          </div>
+          <p class="describe" style="margin: 28px 0 0"> 主要从事人机界面设计，致力于探究新技术之下的设计表达。</p>
         </div>
-        <p style="font-size: 12px; opacity:0.45"> 主要从事人机界面设计，致力于探究新技术之下的设计表达。</p>
-        <p class="hr-line"></p>
-        <div>
-          <p class="text"> 从业四年，深耕于互联网圈，平面出身，现主要从事人机界面设计工作。<br>推崇极简主义、功能主义，学习思考日本设计的文化背景及其理念，对比国内的社会发展状况，做好自己的同时努力探寻作为新世代设计师所肩负的使命，也对目前经济全球化背景下的国内设计形式趋同略感不安。 </p>
+        <div class="right">
+          <p class="text" style="margin:0 auto"> 从业四年，深耕于互联网圈，平面出身，现主要从事人机界面设计工作。<br>推崇极简主义、功能主义，学习思考日本设计的文化背景及其理念，对比国内的社会发展状况，做好自己的同时努力探寻作为新世代设计师所肩负的使命，也对目前经济全球化背景下的国内设计形式趋同略感不安。 </p>
         </div>
       </div>
       <div class="footer">
@@ -171,8 +199,8 @@
         <p>
           <a class="connect" href="mailto:yothan511@gmail.com"> yothan511@gmail.com </a>
         </p>
-        <p class="hr-line2"></p>
-        <p style="opacity:0.4; font-size:12px; letter-spacing: 0.5px; margin-top:50px"> Designed and Coded by yothan </p>
+        <hr>
+        <p class="copyright"> © 2018 Huihan. </p>
       </div>
     </div>
   </div>

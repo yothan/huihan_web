@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  font-family: "SF Pro Text","SF Pro Display","SF Pro Icons",'PingHei', 'PingFang SC',"Helvetica Neue","Helvetica","Arial",'Microsoft YaHei',sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,SF Pro Text,SF Pro Display,SF Pro Icons,Helvetica,Arial,Microsoft YaHei,sans-serif;
   background-color: #fff;
   color: #333333;
   font-size: 16px;
@@ -34,7 +34,7 @@ a.nav:hover{
 
 a.connect{
   letter-spacing: 0.5px;
-  color: #333333;
+  color: #333;
   text-decoration: none;
   transition: all 150ms linear;
 }
@@ -140,10 +140,48 @@ div.para .title{
 }
 
 div.para{
-  margin-top: 20px;
   width: 100%;
   overflow: hidden;
 }
+
+  div.para .drag_box{
+    margin: 16px 0 0 136px;
+    width: 1000px;
+    height: 12px;
+  }
+
+  div.para .drag_box .drag{
+    width: 100px;
+    height: 2px;
+    cursor: pointer;
+    background-color: #333;
+    transition: height 200ms ease;
+    margin-bottom: 10px;
+  }
+
+  div.para .drag_box .drag:hover{
+    height: 4px;
+  }
+
+  div.para .profile{
+    margin-top: 50px;
+    width: 1000px;
+    height: 200px;
+    background-color: #edeff6;
+    position: relative;
+  }
+
+    div.para .profile .explain{
+      position: absolute;
+      width: 100%;
+      top: 30%;
+      left: 23%;
+    }
+
+    div.para .profile p.explain{
+      color: #9096a1;
+      font-size: 12px;
+    }
 
   div.para .pic{
     font-size: 0px;
@@ -156,7 +194,7 @@ div.para{
   }
 
     div.para .pic .mix{
-    margin-right: 6px;
+    margin-right: 8px;
     width: 260px;
     height: 380px;
     background-color: lightgrey;
@@ -177,21 +215,40 @@ div.para{
   overflow: hidden;
 }
 
-  .para .profile{
-    width: 350px;
-    height: 400px;
+div.profile-text{
+  width: 100%;
+  height: 200px;
+  margin-top: 60px;
+}
+
+  div.profile-text .left{
+    width: 340px;
+    height: 200px;
     float: left;
   }
 
-div.profile-text{
-  width: 566px;
-  height: 400px;
-  float: left;
-  padding: 20px 0 0 84px;
-}
+  div.profile-text .right{
+    margin-top: 44px;
+    width: 540px;
+    height: 200px;
+    float: right;
+  }
+
+  div.profile-text p.name{
+    margin: 0 0 28px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  div.profile-text p.fl{
+    font-size: 14px;
+    float: left;
+    opacity: 0.8;
+    margin: 0;
+  }
 
 h1.sub-title{
-  padding-top: 21px;
+  margin: 100px 0 60px;
   font-size: 40px;
   font-weight: normal;
 }
@@ -200,64 +257,38 @@ p.sub-title{
   font-size: 16px;
   opacity: 0.8;
   float: left;
-  padding-top: 60px;
+  padding-top: 110px;
   padding-left: 15px;
   letter-spacing: 2px;
-}
-
-p.comment{
-  letter-spacing: 2px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-p.name{
-  margin: 30px 0 12px;
-  font-size: 28px;
-  line-height: 20px;
 }
 
 div.comment{
   width: 1000px;
   overflow: hidden;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 
-.fl{
-  font-size: 16px;
-  float: left;
-}
-
-p.interval{
-  width: 2px;
-  height: 14px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 20px;
-}
-
-p.hr-line{
-  margin: 36px 0;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-p.hr-line2{
-  width: 40px;
-  margin: 80px 0 -30px;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
+  div.comment p.comment{
+    margin: 50px 0 6px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
 
 p.text{
   font-size: 14px;
-  line-height: 32px;
-  opacity: 0.85;
+  line-height: 30px;
+  opacity: 0.8;
 }
 
 p.describe{
   font-size: 12px;
   opacity: 0.4;
 }
+
+  p.describe .members{
+    margin-top: 8px;
+  }
 
 p.no_margin{
   margin: 0;
@@ -269,6 +300,13 @@ div.footer{
   height: 220px;
   width: 100%;
 }
+
+  div.footer p.copyright{
+    opacity: 0.4;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-top: 40px
+  }
 
 div.pic_cover{
   width: 260px;
@@ -386,7 +424,7 @@ div.design_bottom{
 
         div.design_bottom .nav .text_button .previous img{
           width: 8px;
-          padding-top: 5px;
+          padding-top: 3px;
           position: absolute;
         }
 
@@ -398,12 +436,12 @@ div.design_bottom{
         div.design_bottom .nav .text_button .next img{
           right: 0px;
           width: 8px;
-          padding-top: 5px;
+          padding-top: 3px;
           position: absolute;
         }
 
 div.label{
-  margin: 10px auto 0;
+  margin: 14px auto 0;
   height: 20px;
 }
 
@@ -486,7 +524,7 @@ div.scroll_box{
   width: 30px;
   height: 100%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
   transform: translateY(-50px);
   transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -497,7 +535,7 @@ div.scroll_box{
   }
 
 div.scroll_box:hover{
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 div.scroll_box_down{
@@ -546,4 +584,5 @@ div.introduction{
       div.introduction .members .character .title p:first-child{
         font-size: 11px;
         opacity: 0.8;
+        margin-bottom: 8px;
       }
