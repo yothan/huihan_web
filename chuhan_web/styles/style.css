@@ -440,7 +440,7 @@ div.design_bottom{
           position: absolute;
         }
 
-div.label{
+div.design_title div.label{
   margin: 14px auto 0;
   height: 20px;
 }
@@ -486,23 +486,27 @@ div.thumb_box_down{
 }
 div.design_display{
   position: relative;
-  margin: 50px auto 12px;
+  margin: 40px auto 12px;
   width: 1000px;
   height: 562px;
   background-color: lightgrey;
   overflow: hidden;
 }
-img.display{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-img.active{
-  opacity: 1;
-}
+
+  div.design_display .display{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+
+  div.design_display .active{
+    opacity: 1;
+    z-index: 1;
+  }
+
 li.designs::before{
   z-index: 1;
   position: relative;
@@ -551,8 +555,8 @@ div.thumb_nav{
 
 p.label{
   color: #333;
-  padding: 0 10px;
-  margin: 0 0 0 8px;
+  padding: 4px 10px;
+  margin: -8px 0 0 8px;
   border: 1px solid;
   border-color: #333;
   display: inline-block;
@@ -563,7 +567,7 @@ p.label{
 
 div.introduction{
   width: 100%;
-  margin: 12px auto 0;
+  margin: 24px auto 0;
 }
 
   div.introduction .members{

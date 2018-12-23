@@ -22,15 +22,15 @@
 
 // 点击缩略图切换大图
     $('li.designs').click(function(){
-      $('.design_display').children('img').removeClass('active');
-      $('.design_display').children('img').eq($(this).index()).addClass('active');
+      $('.design_display').children().removeClass('active');
+      $('.design_display').children().eq($(this).index()).addClass('active');
     });
 
 // 点击右箭头滑动缩略图
     $('#scroll_right').mousedown(function(){
       var x=$('ul.designs li:last').index();
       var y=x*106-906;
-      $('ul.designs').animate({scrollLeft:y},500);
+      $('ul.designs').animate({scrollLeft:y},600);
     });
     $('#scroll_right').mouseup(function(){
       $('ul.designs').stop();
@@ -38,11 +38,29 @@
 
 // 点击左箭头滑动缩略图
     $('#scroll_left').mousedown(function(){
-      $('ul.designs').animate({scrollLeft:0},500);
+      $('ul.designs').animate({scrollLeft:0},600);
     });
     $('#scroll_left').mouseup(function(){
       $('ul.designs').stop();
     });
+
+    // 点击右箭头滑动缩略图(萤石)
+        $('#scroll_right_ezviz').mousedown(function(){
+          var x=$('ul.designs li:last').index();
+          var y=x*106-906;
+          $('ul.designs').animate({scrollLeft:y},1000);
+        });
+        $('#scroll_right_ezviz').mouseup(function(){
+          $('ul.designs').stop();
+        });
+
+    // 点击左箭头滑动缩略图(萤石)
+        $('#scroll_left_ezviz').mousedown(function(){
+          $('ul.designs').animate({scrollLeft:0},1000);
+        });
+        $('#scroll_left_ezviz').mouseup(function(){
+          $('ul.designs').stop();
+        });
 
 // 点击底部导航小箭头漂移
     $('.previous').hover(function(){
