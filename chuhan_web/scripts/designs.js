@@ -20,10 +20,22 @@
     $(this).addClass('designs_chosen');
   });
 
+// 视频gif播放监听
+//function vid_play(){
+//  var vid_o = $('.design_display').children().css('opacity');
+//  if (vid_o == 1) {
+//    $('.video_gif').trigger('play');
+//  } else {
+//    $('.video_gif').trigger('pause');
+//  }
+//};
+
 // 点击缩略图切换大图
     $('li.designs').click(function(){
       $('.design_display').children().removeClass('active');
       $('.design_display').children().eq($(this).index()).addClass('active');
+      $('video').trigger('pause');
+      $('.design_display').children().eq($(this).index()).delay(800).trigger('play');
     });
 
 // 点击右箭头滑动缩略图
@@ -64,13 +76,13 @@
 
 // 点击底部导航小箭头漂移
     $('.previous').hover(function(){
-      $(this).children('#nav_previous').stop().animate({left:'-5px', opacity:'0.6'},300);
+      $(this).children('#nav_previous').stop().animate({left:'-7px', opacity:'0.6'},200);
     },function(){
-      $(this).children('#nav_previous').stop().animate({left:'0px', opacity:'1'},300);
+      $(this).children('#nav_previous').stop().animate({left:'0px', opacity:'1'},200);
     });
 
     $('.next').hover(function(){
-      $(this).children('#nav_next').stop().animate({right:'-5px', opacity:'0.6'},300);
+      $(this).children('#nav_next').stop().animate({right:'-7px', opacity:'0.6'},200);
     },function(){
-      $(this).children('#nav_next').stop().animate({right:'0px', opacity:'1'},300);
+      $(this).children('#nav_next').stop().animate({right:'0px', opacity:'1'},200);
     });

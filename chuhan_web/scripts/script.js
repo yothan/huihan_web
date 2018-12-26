@@ -2,17 +2,17 @@ $(function(){
 
   // 点击导航栏定位滚动条
   $('#nav-design').click(function () {
-    var design_top = $('#design').offset().top + 50;
+    var design_top = $('#design').offset().top + 60;
     $('html,body').animate({scrollTop:design_top},500);
   });
 
   $('#nav-photo').click(function () {
-    var photo_top = $('#photo').offset().top + 50;
+    var photo_top = $('#photo').offset().top + 110;
     $('html,body').animate({scrollTop:photo_top},700);
   });
 
   $('#nav-aboutme').click(function () {
-    var aboutme_top = $('#aboutme').offset().top + 50;
+    var aboutme_top = $('#aboutme').offset().top + 110;
     $('html,body').animate({scrollTop:aboutme_top},900);
   });
 
@@ -73,6 +73,7 @@ $(function(){
     var g2=Math.round(e2*900/c2)+"px";
     $('div#drag_2').css('left',g2);
   });
+
 });
 
 // 首页文字动画

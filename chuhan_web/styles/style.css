@@ -167,15 +167,17 @@ div.para{
     margin-top: 50px;
     width: 1000px;
     height: 200px;
-    background-color: #edeff6;
+  /*  background-color: #edeff6;   */
+    background-image: url('../images/yothan@2x.jpg');
+    background-size: contain;
     position: relative;
   }
 
-    div.para .profile .explain{
+    div.para .profile div.explain{
       position: absolute;
       width: 100%;
-      top: 30%;
-      left: 23%;
+      top: 18%;
+      left: 46%;
     }
 
     div.para .profile p.explain{
@@ -217,20 +219,18 @@ div.para{
 
 div.profile-text{
   width: 100%;
-  height: 200px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
   div.profile-text .left{
     width: 340px;
-    height: 200px;
     float: left;
   }
 
   div.profile-text .right{
-    margin-top: 44px;
+    margin-top: -20px;
     width: 540px;
-    height: 200px;
+    height: 320px;
     float: right;
   }
 
@@ -295,9 +295,8 @@ p.no_margin{
 }
 
 div.footer{
-  margin-top: 36px;
   float: left;
-  height: 220px;
+  height: 200px;
   width: 100%;
 }
 
@@ -305,7 +304,7 @@ div.footer{
     opacity: 0.4;
     font-size: 12px;
     letter-spacing: 0.5px;
-    margin-top: 40px
+    margin-top: 20px
   }
 
 div.pic_cover{
@@ -385,12 +384,12 @@ p.cover_content{
 img.homepage{
   height: 24px;
   overflow: hidden;
-  opacity: 0.4;
+  opacity: 1;
   transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 img.homepage:hover{
-  opacity: 1;
+  opacity: 0.6;
 }
 
 hr{
@@ -405,7 +404,7 @@ div.design_bottom{
   clear: both;
 }
 
-  div.design_bottom .nav{
+  div.design_bottom div.nav{
     margin: 40px auto 120px;
   }
 
@@ -413,35 +412,42 @@ div.design_bottom{
       height: 20px;
     }
 
-  /*  div.design_bottom .nav .text_button{
-      margin-top: 10px;
-    } */
+    div.design_bottom .nav .text_button{
+    /*  position: relative;   */
+    }
 
       div.design_bottom .nav .text_button .previous{
-        padding: 8px 0;
+        margin: 8px 0;
         float:left;
       }
 
         div.design_bottom .nav .text_button .previous img{
           width: 8px;
-          padding-top: 3px;
-          position: absolute;
+          top: 1px;
+          position: relative;
+        }
+
+        div.design_bottom .nav .text_button .previous a{
+          padding-left: 12px;
         }
 
       div.design_bottom .nav .text_button .next{
-        padding: 8px 0;
+        margin: 8px 0;
         float:right;
       }
 
         div.design_bottom .nav .text_button .next img{
-          right: 0px;
           width: 8px;
-          padding-top: 3px;
-          position: absolute;
+          top: 1px;
+          position: relative;
+        }
+
+        div.design_bottom .nav .text_button .next a{
+          padding-right: 12px;
         }
 
 div.design_title div.label{
-  margin: 14px auto 0;
+  margin: 18px auto 0;
   height: 20px;
 }
 
@@ -489,7 +495,7 @@ div.design_display{
   margin: 40px auto 12px;
   width: 1000px;
   height: 562px;
-  background-color: lightgrey;
+  background-color: #fff;
   overflow: hidden;
 }
 
