@@ -82,6 +82,3 @@ function motto_move(){
     $('#motto').delay(500).animate({paddingTop:'120px',opacity:'1'},700);
   };
 $('#header_pre').load(motto_move());
-
-// 刷新页面返回顶部
-$('html,body').onload = function(){$(window).scrollTop(0);}

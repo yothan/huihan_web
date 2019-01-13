@@ -230,7 +230,7 @@ div.profile-text{
   div.profile-text .right{
     margin-top: -20px;
     width: 540px;
-    height: 320px;
+    height: 244px;
     float: right;
   }
 
@@ -296,7 +296,7 @@ p.no_margin{
 
 div.footer{
   float: left;
-  height: 200px;
+  height: 210px;
   width: 100%;
 }
 
