@@ -145,7 +145,7 @@ div.para{
 }
 
   div.para .drag_box{
-    margin: 16px 0 0 136px;
+    margin-top: 16px;
     width: 1000px;
     height: 12px;
   }
@@ -229,7 +229,7 @@ div.profile-text{
   div.profile-text .right{
     margin-top: -20px;
     width: 540px;
-    height: 244px;
+    height: 246px;
     float: right;
   }
 

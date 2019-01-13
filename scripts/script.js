@@ -83,6 +83,8 @@ $(function(){
   var b3=(a3-1000)/2+2;
   $('div#design_list').css('padding-left',b3);
   $('div#photo_list').css('padding-left',b3);
+  $('div#drag_box_1').css('margin-left',b3);
+  $('div#drag_box_2').css('margin-left',b3);
 });
 
 // 首页文字动画
