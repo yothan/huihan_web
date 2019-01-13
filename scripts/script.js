@@ -30,7 +30,7 @@ $(function(){
   });
 
   // 图片拖动条
-  $('.drag').draggable({ axis: "x" ,containment: "parent" });
+  $('.drag').draggable({ axis: "x", containment: "parent" });
 
   //designs 拖动条映射
   $('div#drag_1').draggable({
@@ -74,6 +74,15 @@ $(function(){
     $('div#drag_2').css('left',g2);
   });
 
+});
+
+  //滚动部分缩进
+
+$(function(){
+  var a3=$(document).width();
+  var b3=(a3-1000)/2+2;
+  $('div#design_list').css('padding-left',b3);
+  $('div#photo_list').css('padding-left',b3);
 });
 
 // 首页文字动画
