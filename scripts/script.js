@@ -1,5 +1,8 @@
 $(function(){
 
+  //调用文字动画函数
+  motto_move();
+
   // 点击导航栏定位滚动条
   $('#nav-design').click(function () {
     var design_top = $('#design').offset().top + 60;
@@ -76,8 +79,7 @@ $(function(){
 
 });
 
-  //滚动部分缩进
-
+//滚动部分缩进
 $(function(){
   var a3=$(document).width();
   var b3=(a3-1000)/2+2;
@@ -87,9 +89,9 @@ $(function(){
   $('div#drag_box_2').css('margin-left',b3);
 });
 
-// 首页文字动画
+// 首页文字动画函数
 function motto_move(){
     $('#motto-bg').delay(500).animate({paddingTop:'90px',opacity:'0.8'},700);
     $('#motto').delay(500).animate({paddingTop:'120px',opacity:'1'},700);
   };
-$('#header_pre').load(motto_move());
+  // $('#header_pre').load(motto_move());
