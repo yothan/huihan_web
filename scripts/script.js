@@ -23,13 +23,17 @@ $(function(){
   $('.mix').hover(function(){
     $(this).children('.design_cover').addClass('design_cover_hover');
     $(this).children('.pic_cover').addClass('pic_cover_hover');
-    $(this).children('p.design_cover_title').stop().animate({bottom:'130px', opacity:'1'},500);
-    $(this).children('p.cover_content').stop().animate({bottom:'152px', opacity:'0.8'},500);
+    $(this).children('p.design_cover_title').addClass('design_cover_title_hover');
+    $(this).children('p.cover_content').addClass('cover_content_hover');
+    //$(this).children('p.design_cover_title').stop().animate({bottom:'130px', opacity:'1'},500);
+    //$(this).children('p.cover_content').stop().animate({bottom:'152px', opacity:'0.8'},500);
   },function(){
     $(this).children('.design_cover').removeClass('design_cover_hover');
     $(this).children('.pic_cover').removeClass('pic_cover_hover');
-    $(this).children('p.design_cover_title').stop().animate({bottom:'100px', opacity:'0'},500);
-    $(this).children('p.cover_content').stop().animate({bottom:'110px', opacity:'0'},500);
+    $(this).children('p.design_cover_title').removeClass('design_cover_title_hover');
+    $(this).children('p.cover_content').removeClass('cover_content_hover');
+    //$(this).children('p.design_cover_title').stop().animate({bottom:'74px', opacity:'1'},500);
+    //$(this).children('p.cover_content').stop().animate({bottom:'110px', opacity:'0'},500);
   });
 
   // 图片拖动条

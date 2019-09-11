@@ -310,7 +310,7 @@ div.pic_cover{
   width: 260px;
   height: 380px;
   background-size: cover;
-  transition: all,0.7s;
+  transition: all 0.6s cubic-bezier(0,0,0.2,1);
 }
 
 div.design_cover{
@@ -319,15 +319,15 @@ div.design_cover{
   background-color: rgba(0, 0, 0, 0);
   background-blend-mode: multiply;
   background-size: cover;
-  transition: all,0.7s;
+  transition: all 0.6s cubic-bezier(0,0,0.2,1);
 }
 
 div.pic_cover_hover{
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 div.design_cover_hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -341,26 +341,40 @@ p.pic_cover_title{
 }
 
 p.design_cover_title{
-  font-size: 28px;
+  font-size: 26px;
   position: relative;
-  bottom: 100px;
+  bottom: 74px;
   left: 20px;
   font-weight: 300;
   color: #fff;
   opacity: 0;
+  transition: all 0.6s cubic-bezier(0,0,0.2,1);
+}
+
+p.design_cover_title_hover{
+  bottom: 124px;
+  opacity: 1;
 }
 
 p.cover_content{
-  font-weight: 400;
+  white-space: normal;
+  width: 220px;
   letter-spacing: 0.5px;
   font-size: 12px;
   line-height: 22px;
-  opacity: 0;
+  opacity: 1;
   position: relative;
-  bottom: 110px;
+  bottom: 80px;
   left: 20px;
   color: #fff;
+  transition: all 0.6s cubic-bezier(0,0,0.25,1);
 }
+
+p.cover_content_hover{
+  bottom: 140px;
+  opacity: 1;
+}
+
 
 #header_bg{
   position: absolute;
