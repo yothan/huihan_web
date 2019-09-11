@@ -362,7 +362,7 @@ p.cover_content{
   letter-spacing: 0.5px;
   font-size: 12px;
   line-height: 22px;
-  opacity: 1;
+  opacity: 0;
   position: relative;
   bottom: 80px;
   left: 20px;
