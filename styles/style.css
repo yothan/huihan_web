@@ -547,7 +547,7 @@ div.scroll_box{
   width: 30px;
   height: 100%;
   opacity: 0;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-50px);
   transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -558,7 +558,7 @@ div.scroll_box{
   }
 
 div.scroll_box:hover{
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 div.scroll_box_down{
