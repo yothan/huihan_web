@@ -9,7 +9,7 @@ body {
   margin: 0px;
   overflow-x: hidden;
 /*  background-repeat: no-repeat;
-  background-image: url('/images/blog_bg.png');   */
+  background-image: url('/blog/images/blog_bg.png');   */
 }
 p {
   font-size: 14px;
@@ -76,7 +76,7 @@ div.content .tag-big {
   opacity: 0.8;
 }
 .archives .list span.date {
-  font-family: Arial;
+  font-family: "Arial", monospace;
   opacity: 0.3;
   float: right;
 }
@@ -192,11 +192,22 @@ div.header_post span.tags-links a:hover {
   line-height: 30px;
 }
 .post .post-content p {
-  opacity: 0.8;
+  color: #666;
 }
 .post .post-content a {
   color: #368ccb;
   text-decoration: none;
+}
+.post .post-content blockquote {
+  margin: 0;
+  padding: 0 0 0 20px;
+  opacity: 0.4;
+  border-left: 6px solid #ddd;
+}
+.post .post-content img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 .posts .post:first-child {
   padding-top: 50px;
@@ -207,7 +218,7 @@ div.header_post span.tags-links a:hover {
 }
 .posts .post-title {
   font-size: 1.5em;
-  font-family: serif;
+  font-family: "SimSun", serif;
 }
 .posts .post-title .post-title-link {
   color: #333;
@@ -248,5 +259,17 @@ div.poetry {
   div.content {
     width: 90%;
     margin: 0px auto;
+  }
+  .post {
+    padding: 40px 40px;
+  }
+  .posts .post {
+    padding: 25px 40px;
+  }
+  .archives {
+    padding: 50px 40px;
+  }
+  div.header p.theme_poem {
+    width: 224px;
   }
 }
