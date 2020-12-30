@@ -42,7 +42,7 @@
     $('.scroll_box').hover(function(){
       $(this).children('img').animate({opacity:'1'},0);
     },function(){
-      $(this).children('img').animate({opacity:'0.5'},0);  
+      $(this).children('img').animate({opacity:'0.5'},0);
     });
 
 // 点击右箭头滑动缩略图
@@ -67,7 +67,7 @@
         $('#scroll_right_ezviz').mousedown(function(){
           var x=$('ul.designs li:last').index();
           var y=x*106-906;
-          $('ul.designs').animate({scrollLeft:y},1000);
+          $('ul.designs').animate({scrollLeft:y},800);
         });
         $('#scroll_right_ezviz').mouseup(function(){
           $('ul.designs').stop();
@@ -75,9 +75,27 @@
 
     // 点击左箭头滑动缩略图(萤石)
         $('#scroll_left_ezviz').mousedown(function(){
-          $('ul.designs').animate({scrollLeft:0},1000);
+          $('ul.designs').animate({scrollLeft:0},800);
         });
         $('#scroll_left_ezviz').mouseup(function(){
+          $('ul.designs').stop();
+        });
+
+    // 点击右箭头滑动缩略图(Dolphin)
+        $('#scroll_right_Dolphin').mousedown(function(){
+          var x=$('ul.designs li:last').index();
+          var y=x*106-906;
+          $('ul.designs').animate({scrollLeft:y},1000);
+        });
+        $('#scroll_right_Dolphin').mouseup(function(){
+          $('ul.designs').stop();
+        });
+
+    // 点击左箭头滑动缩略图(Dolphin)
+        $('#scroll_left_Dolphin').mousedown(function(){
+          $('ul.designs').animate({scrollLeft:0},1000);
+        });
+        $('#scroll_left_Dolphin').mouseup(function(){
           $('ul.designs').stop();
         });
 
