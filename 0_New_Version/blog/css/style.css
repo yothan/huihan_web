@@ -1,0 +1,275 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: "SF Pro Text", "SF Pro Display", "SF Pro Icons", 'PingHei', 'PingFang SC', "Helvetica Neue", "Helvetica", "Arial", 'Microsoft YaHei', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  font-size: 16px;
+  margin: 0px;
+  overflow-x: hidden;
+/*  background-repeat: no-repeat;
+  background-image: url('/blog/images/blog_bg.png');   */
+}
+p {
+  font-size: 14px;
+  color: #333;
+}
+h3 {
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+SVG {
+  xmlns: "http://www.w3.org/2000/svg";
+  version: "1.1";
+}
+div.content {
+  width: 840px;
+  margin: 0px auto;
+}
+div.content .tag {
+  height: 12px;
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+div.content .tag-big {
+  height: 24px;
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+.blog {
+  background-color: #fff;
+  width: 100%;
+  margin: 60px auto 40px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.05);
+}
+.blog_post {
+  background-color: #fff;
+  width: 100%;
+  margin: 40px auto;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.05);
+}
+.archives {
+  padding: 50px 60px;
+}
+.archives .year {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-family: serif;
+}
+.archives .list {
+  font-size: 14px;
+  margin: 0 0 50px;
+}
+.archives .list .post-archive {
+  margin: 12px 0;
+}
+.archives .list a.title {
+  opacity: 0.8;
+}
+.archives .list span.date {
+  font-family: "Arial", monospace;
+  opacity: 0.3;
+  float: right;
+}
+div.footer {
+  text-align: center;
+  margin: 0 auto 80px;
+  font-size: 12px;
+}
+div.footer .nav {
+  padding: 10px 0 30px;
+  color: #333;
+  font-size: 14px;
+}
+div.footer .nav a {
+  padding: 0 10px;
+  opacity: 0.5;
+  transition: opacity 200ms ease;
+}
+div.footer .nav a:hover {
+  opacity: 0.8;
+}
+div.footer span {
+  opacity: 0.3;
+}
+div.footer a.web-link {
+  opacity: 0.8;
+}
+div.footer a.web-link:hover {
+  text-decoration: underline;
+}
+div.footer img.motto {
+  margin-top: 20px;
+  height: 18px;
+}
+div.header {
+  width: 100%;
+  margin-top: 80px;
+}
+div.header img.flower {
+  height: 40px;
+}
+div.header p.theme_poem {
+  font-family: serif;
+  opacity: 0.6;
+}
+div.header .bg {
+  float: right;
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  right: 0;
+}
+.page-nav {
+  height: 22px;
+  padding: 10px 60px 40px;
+}
+.prev {
+  font-size: 14px;
+  color: #333;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+.next {
+  font-size: 14px;
+  color: #333;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  float: right;
+}
+.current {
+  display: none;
+}
+div.header_post {
+  width: 100%;
+  margin-top: 60px;
+}
+div.header_post img.flower_small {
+  height: 18px;
+  opacity: 0.8;
+}
+div.header_post div.post-title {
+  margin: 30px 0 -16px;
+}
+div.header_post .post-meta {
+  font-size: 12px;
+  padding: 30px 0 0;
+}
+div.header_post .post-meta .post-time {
+  opacity: 0.3;
+}
+div.header_post span.title {
+  font-size: 32px;
+  font-family: serif;
+}
+div.header_post span.tags-links {
+  font-size: 12px;
+  float: right;
+}
+div.header_post span.tags-links a {
+  padding-left: 20px;
+  opacity: 0.3;
+  transition: opacity 200ms ease;
+}
+div.header_post span.tags-links a:hover {
+  opacity: 0.8;
+}
+.post {
+  padding: 40px 60px;
+  background-color: #fff;
+}
+.post .post-content {
+  font-size: 14px;
+  line-height: 30px;
+}
+.post .post-content p {
+  color: #666;
+}
+.post .post-content a {
+  color: #368ccb;
+  text-decoration: none;
+}
+.post .post-content blockquote {
+  margin: 0;
+  padding: 0 0 0 20px;
+  opacity: 0.4;
+  border-left: 6px solid #ddd;
+}
+.post .post-content img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.posts .post:first-child {
+  padding-top: 50px;
+  margin-top: 0;
+}
+.posts .post {
+  padding: 25px 60px;
+}
+.posts .post-title {
+  font-size: 1.5em;
+  font-family: "SimSun", serif;
+}
+.posts .post-title .post-title-link {
+  color: #333;
+  text-decoration: none;
+}
+.posts .post-meta {
+  font-size: 12px;
+  padding: 0;
+}
+.posts .post-meta .post-time {
+  opacity: 0.3;
+}
+.posts .post-meta span.tags-links {
+  float: right;
+}
+.posts .post-meta span.tags-links a {
+  padding-left: 20px;
+  opacity: 0.3;
+  transition: opacity 200ms ease;
+}
+.posts .post-meta span.tags-links a:hover {
+  opacity: 0.8;
+}
+.posts .post::after {
+  margin-top: 50px;
+  position: relative;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  opacity: 0.07;
+}
+div.poetry {
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  div.content {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .post {
+    padding: 40px 40px;
+  }
+  .posts .post {
+    padding: 25px 40px;
+  }
+  .archives {
+    padding: 50px 40px;
+  }
+  div.header p.theme_poem {
+    width: 224px;
+  }
+}
