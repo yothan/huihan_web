@@ -6,13 +6,13 @@
   });
 
 // 缩略图 hover 下滑
-  $('div.thumb_nav').hover(function(){
-    $('.thumb_box').addClass('thumb_box_down');
-    $('.scroll_box').addClass('scroll_box_down');
-  },function(){
-    $('.thumb_box').removeClass('thumb_box_down');
-    $('.scroll_box').removeClass('scroll_box_down');
-  });
+//  $('div.content div.thumb_nav').hover(function(){
+//    $('.thumb_box').addClass('thumb_box_down');
+//    $('.scroll_box').addClass('scroll_box_down');
+//  },function(){
+//    $('.thumb_box').removeClass('thumb_box_down');
+//    $('.scroll_box').removeClass('scroll_box_down');
+//  });
 
 // 缩略图点击标重
   $('li.designs').click(function(){

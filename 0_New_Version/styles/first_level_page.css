@@ -22,10 +22,26 @@ SVG{
 
 /* 顶部导航 & About)_Me 主页样式 */
 
+#motto{
+  padding-top: 210px;
+  width: 500px;
+  position: absolute;
+  left:47.3%;
+  opacity: 0;
+}
+
+#motto-bg{
+  padding-top: 150px;
+  width: 364px;
+  position: absolute;
+  left:41.6%;
+  opacity: 0;
+}
+
 div.nav{
   width: 100vw;
   height: 66px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0);
   box-shadow: 0px 0px 1px rgba(0,0,0,0);
   position: fixed;
   z-index: 5;
@@ -65,7 +81,18 @@ div.header{
   background-repeat: no-repeat;
 }
 
+    div.header div.banner{
+      position: relative;
+      width: 1000px;
+      height: 420px;
+      margin: 0 auto;
+      padding-top: 240px;
+    }
 
+    div.header div.banner img.banner{
+      width: 500px;
+      height: 300px;
+    }
 
 div.line_1{
   width: 1px;
@@ -161,9 +188,80 @@ div.introduce{
     }
 
 /* Design 主页样式 */
-div.design_content{
-  margin: 0 auto;
-  width: 70vw;
-  height: 800px;
-  background-color: #eeeeee;
+
+div.block{
+  height: 10px;
+  width:100vw;
 }
+
+div.design_content{
+  margin: 100px auto 0;
+  width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+    div.design_content a.article{
+      width: 340px;
+      height: 240px;
+      margin:0 20px 80px;
+    }
+
+        div.design_content a.article div.image{
+          width: 340px;
+          height: 186px;
+          background-color: #eee;
+          overflow: hidden;
+        }
+
+            div.design_content a.article div.image img{
+              width: 340px;
+              transition: transform 600ms ease;
+            }
+
+            div.design_content a.article:hover div.image img{
+              transform: scale(1.1);
+            }
+
+        div.design_content a.article div.intro{
+          font-size: 12px;
+          color: rgba(16, 34, 72, 0.5);
+        }
+
+            div.design_content a.article div.intro p.title{
+              font-size: 14px;
+              color: #102247;
+              margin-top: 20px;
+              margin-bottom: 8px;
+            }
+
+            div.design_content a.article div.intro p{
+              margin-top: 8px;
+              margin-bottom: 8px;
+            }
+
+            div.design_content a.article div.intro p.date{
+              opacity: 0.6;
+            }
+
+
+div.footer{
+  width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+    div.footer hr{
+      margin: 0 0 24px;
+      height: 1px;
+      background-color: rgba(0,0,0,0.1);
+      border: none;
+      width: 100%;
+    }
+
+    div.footer p.copyright{
+      opacity: 0.4;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      margin: 24px;
+    }
