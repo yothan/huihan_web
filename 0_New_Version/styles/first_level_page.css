@@ -153,10 +153,23 @@ div.introduce{
       line-height: 16px;
     }
 
+    div.introduce div.opinion{
+      width: 600px;
+      margin: 80px auto 0;
+    }
+
+    div.introduce div.opinion p{
+      width: 600px;
+      font-size: 14px;
+      color: rgba(16, 34, 71);
+      opacity: 0.8;
+      line-height: 28px;
+    }
+
     div.introduce div.third_line p{
       font-size: 12px;
       color: rgba(16, 34, 71, 0.5);
-      margin: 60px auto 16px;
+      margin: 100px auto 16px;
       line-height: 16px;
     }
 
