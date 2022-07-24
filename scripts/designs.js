@@ -6,13 +6,13 @@
   });
 
 // 缩略图 hover 下滑
-  $('div.thumb_nav').hover(function(){
-    $('.thumb_box').addClass('thumb_box_down');
-    $('.scroll_box').addClass('scroll_box_down');
-  },function(){
-    $('.thumb_box').removeClass('thumb_box_down');
-    $('.scroll_box').removeClass('scroll_box_down');
-  });
+//  $('div.content div.thumb_nav').hover(function(){
+//    $('.thumb_box').addClass('thumb_box_down');
+//    $('.scroll_box').addClass('scroll_box_down');
+//  },function(){
+//    $('.thumb_box').removeClass('thumb_box_down');
+//    $('.scroll_box').removeClass('scroll_box_down');
+//  });
 
 // 缩略图点击标重
   $('li.designs').click(function(){
@@ -45,17 +45,17 @@
       $(this).children('img').animate({opacity:'0.5'},0);
     });
 
-// 点击右箭头滑动缩略图
+// 点击右箭头滑动缩略图(通用)
     $('#scroll_right').mousedown(function(){
       var x=$('ul.designs li:last').index();
-      var y=x*106-906;
+      var y=x*106-846;
       $('ul.designs').animate({scrollLeft:y},600);
     });
     $('#scroll_right').mouseup(function(){
       $('ul.designs').stop();
     });
 
-// 点击左箭头滑动缩略图
+// 点击左箭头滑动缩略图(通用)
     $('#scroll_left').mousedown(function(){
       $('ul.designs').animate({scrollLeft:0},600);
     });
@@ -66,7 +66,7 @@
     // 点击右箭头滑动缩略图(萤石)
         $('#scroll_right_ezviz').mousedown(function(){
           var x=$('ul.designs li:last').index();
-          var y=x*106-906;
+          var y=x*106-846;
           $('ul.designs').animate({scrollLeft:y},800);
         });
         $('#scroll_right_ezviz').mouseup(function(){
@@ -84,7 +84,7 @@
     // 点击右箭头滑动缩略图(Dolphin)
         $('#scroll_right_Dolphin').mousedown(function(){
           var x=$('ul.designs li:last').index();
-          var y=x*106-906;
+          var y=x*106-846;
           $('ul.designs').animate({scrollLeft:y},1000);
         });
         $('#scroll_right_Dolphin').mouseup(function(){
