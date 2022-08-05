@@ -67,6 +67,23 @@ div.content{
   padding-top: 120px;
 }
 
+    div.content img.img_display{
+      width: 100%;
+      margin: 24px 0;
+    }
+
+        div.content img.img_display:first-child{
+          margin-top: 0;
+        }
+
+    div.content p.copywriting{
+      font-size: 14px;
+      text-align: center;
+      color: rgba(16, 34, 71);
+      opacity: 0.8;
+      line-height: 20px;
+    }
+
     div.content div.design_display{
       position: relative;
       margin: 0 auto 12px;
@@ -266,3 +283,19 @@ div.content{
             div.content .design_bottom .navi .text_button .next a:hover{
               opacity: 0.7;
             }
+
+    div.content hr{
+      margin: 40px 0 24px;
+      height: 1px;
+      background-color: rgba(0,0,0,0.1);
+      border: none;
+      width: 100%;
+    }
+
+    div.content p.copyright{
+      opacity: 0.4;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      margin: 24px;
+      text-align: center;
+    }
