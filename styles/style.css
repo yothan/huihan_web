@@ -68,10 +68,16 @@ div.homepage{
       }
 
         div.homepage div.homepage_nav a{
-          margin-left: 40px;
+          margin-left: 24px;
           color: #fff;
           font-size: 13px;
           font-weight: 500;
+          padding: 8px 12px;
+          border-radius: 4px;
+        }
+
+        div.homepage div.homepage_nav a:hover{
+          background-color: rgba(0,0,0,.1);
         }
 
     div.homepage img.theme{
