@@ -36,6 +36,7 @@ div.nav{
   box-shadow: 0px 0px 4px rgba(0,0,0,0);
   position: fixed;
   z-index: 5;
+  -webkit-backdrop-filter: blur(10px);
 }
 
     div.nav div.logo{
@@ -55,10 +56,18 @@ div.nav{
     }
 
         div.nav div.homepage_nav a{
-          margin-left: 40px;
+          margin-left: 24px;
           color: #4a4a4a;
           font-size: 13px;
           font-weight: 500;
+          padding: 8px 12px;
+          border-radius: 4px;
+        }
+
+        div.nav div.homepage_nav a:hover{
+          background-color: rgba(0, 0, 0, .05);
+          cursor: pointer;
+          color: #102247;
         }
 
 div.content{

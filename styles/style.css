@@ -57,6 +57,10 @@ div.homepage{
       padding-top: 24px;
     }
 
+        div.homepage div.logo a{
+          padding:8px 12px;
+        }
+
         div.homepage div.logo img.logo{
           width: 10vw;
         }
@@ -78,6 +82,7 @@ div.homepage{
 
         div.homepage div.homepage_nav a:hover{
           background-color: rgba(0,0,0,.1);
+          cursor: pointer;
         }
 
     div.homepage img.theme{
