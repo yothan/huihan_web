@@ -22,21 +22,6 @@ SVG{
 
 /* 顶部导航 & About)_Me 主页样式 */
 
-#motto{
-  padding-top: 210px;
-  width: 500px;
-  position: absolute;
-  left:47.3%;
-  opacity: 0;
-}
-
-#motto-bg{
-  padding-top: 150px;
-  width: 364px;
-  position: absolute;
-  left:41.6%;
-  opacity: 0;
-}
 
 div.nav{
   width: 100vw;
@@ -86,19 +71,17 @@ div.nav{
 div.header{
   width: 100vw;
   height: 100vh;
-  background-color: #fcfcfc;
-  background-image: url('../images/header_bg.jpg');
-  background-size: contain;
+  background-color: #fefefe;
+  background-image: url('../images/header_bg2.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-    div.header div.banner{
+    div.header div.motto{
       position: relative;
-      width: 1000px;
-      height: 420px;
       margin: 0 auto;
-      padding-top: 240px;
+      padding-top: 36vh;
     }
 
     div.header div.banner img.banner{
@@ -106,27 +89,47 @@ div.header{
       height: 300px;
     }
 
-div.line_1{
-  width: 1px;
-  height: 120px;
-  background-color: #999;
-  position: absolute;
-  top:93vh;
-  left:50vw;
-}
+    #motto{
+      padding-top: 120px;
+      width: 500px;
+      position: absolute;
+      left:55.3%;
+      opacity: 0;
+    }
 
-
-div.monologue{
-  width: 261px;
-  margin: 0 auto;
-}
-
-    div.monologue img{
-      margin-top: 180px;
-      width: 261px;
+    #motto-bg{
+      padding-top: 60px;
+      width: 364px;
+      position: absolute;
+      left:51%;
+      opacity: 0;
     }
 
 
+div.monologue{
+  background-color: #202223;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 20vw;
+}
+
+    div.monologue img.monologue_white{
+      width: 261px;
+      position: relative;
+      top: -30vh;
+    }
+
+    div.monologue img.monologue_pic{
+      width: 429px;
+      height: 813px;
+      margin-left: 20vw;
+      position: relative;
+      top: -15vh;
+    }
+
+
+/*
 div.line_2{
   width: 1px;
   height: 120px;
@@ -135,6 +138,7 @@ div.line_2{
   top:100px;
   left:50vw;
 }
+*/
 
 
 div.photo{
@@ -149,7 +153,7 @@ div.photo{
 
 div.introduce{
   width: 1240px;
-  margin: 60px auto 0;
+  margin: 100px auto 0;
   text-align: center;
 }
 

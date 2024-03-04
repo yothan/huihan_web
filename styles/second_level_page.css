@@ -45,6 +45,10 @@ div.nav{
       padding-top: 24px;
     }
 
+        div.nav div.logo a{
+          padding:8px 12px;
+        }
+
         div.nav div.logo img.logo{
           width: 154px;
         }

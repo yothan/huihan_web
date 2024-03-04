@@ -16,15 +16,18 @@ $(document).scroll(function(){
   }
   var d1 = "rgba(255, 255, 255," + c1 + ")";
   var d2 = "0px 4px 8px rgba(0, 0, 0," + c2 + ")";
+  var d3 = c1 * 12;
+  var d4 = "blur(" + d3 + "px)"
   $('div.nav').css('background-color',d1);
   $('div.nav').css('box-shadow',d2);
+  $('div.nav').css('-webkit-backdrop-filter',d4);
 //  alert(d1);
 });
 
 
 // About_Me 文字动画函数
 function motto_move(){
-    $('#motto-bg').delay(500).animate({paddingTop:'90px',opacity:'0.8'},700);
-    $('#motto').delay(500).animate({paddingTop:'120px',opacity:'1'},700);
+    $('#motto-bg').delay(500).animate({paddingTop:'0px',opacity:'0.8'},700);
+    $('#motto').delay(500).animate({paddingTop:'30px',opacity:'1'},700);
   };
   // $('#header_pre').load(motto_move());
