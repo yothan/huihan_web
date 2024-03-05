@@ -18,6 +18,13 @@
   $('li.designs').click(function(){
     $('li.designs').removeClass('designs_chosen');
     $(this).addClass('designs_chosen');
+    $('div.thumb_box').removeClass('thumb_box_hover');
+    $(this).children('div.thumb_box').addClass('thumb_box_hover');
+  });
+
+// 缩略图第一个子元素div加样式类 thumb_box_hover
+  $(function(){
+    $("ul.designs li:first-child div").addClass("thumb_box_hover");
   });
 
 // 视频gif播放监听
