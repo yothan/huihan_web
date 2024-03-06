@@ -48,7 +48,7 @@ div.nav{
         }
 
     div.nav div.homepage_nav{
-      padding-right: 56px;
+      padding-right: 40px;
       padding-top: 22px;
       float:right;
     }
@@ -233,14 +233,17 @@ div.design_content{
     div.design_content a.article{
       width: 340px;
       /* height: 240px; */
-      margin:0 16px 44px;
-      padding: 12px;
+      margin:12px 28px 56px;
+      padding: 0px;
       border-radius: 12px;
+      transition: all 200ms ease-out;
     }
 
     div.design_content a.article:hover{
-      background-color: #f5f5f5;
+      background-color: #f0f0f0;
       cursor: pointer;
+      margin:0 16px 44px;
+      padding: 12px;
     }
 
         div.design_content a.article div.image{
@@ -257,7 +260,7 @@ div.design_content{
             }
 
             div.design_content a.article:hover div.image img{
-              transform: scale(1.05);
+              transform: scale(1);
             }
 
         div.design_content a.article div.intro{
