@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#333333;}
-</style>
-<path class="st0" d="M8,7l-6.7,7L0,12.6L5.3,7L0,1.4L1.3,0L8,7L8,7z"/>
+<svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2433_437)">
+<path d="M7.60291 7.08513C7.82497 7.31714 7.82497 7.68287 7.60291 7.91487L1.74007 14.0402C1.50133 14.2897 1.10187 14.2866 0.866939 14.0336L0.382738 13.5122C0.167478 13.2804 0.169185 12.9212 0.386638 12.6915L4.90966 7.91243C5.12863 7.68107 5.12863 7.31893 4.90966 7.08757L0.386637 2.30852C0.169184 2.07876 0.167478 1.71964 0.382737 1.48782L0.866938 0.966374C1.10187 0.713369 1.50133 0.710347 1.74007 0.95977L7.60291 7.08513Z" fill="#5A5A5A"/>
+</g>
+<defs>
+<clipPath id="clip0_2433_437">
+<rect width="8" height="14" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
 </svg>

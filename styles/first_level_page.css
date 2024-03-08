@@ -4,7 +4,7 @@ html{
 }
 
 body{
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,SF Pro Text,SF Pro Display,SF Pro Icons,Helvetica,Arial,Microsoft YaHei,sans-serif;
+  font-family: -apple-system, "Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #fbfbfb;
   color: #333;
   font-size: 16px;
@@ -30,7 +30,7 @@ div.nav{
   box-shadow: 0px 0px 1px rgba(0,0,0,0);
   position: fixed;
   z-index: 5;
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0px);
 }
 
     div.nav div.logo{
@@ -55,17 +55,18 @@ div.nav{
 
         div.nav div.homepage_nav a{
           margin-left: 24px;
-          color: #4a4a4a;
-          font-size: 13px;
+          color: #5a5a5a;
+          font-size: 14px;
           font-weight: 500;
           padding: 8px 12px;
           border-radius: 4px;
+          letter-spacing: .6px;
+          transition: all .3s ease;
         }
 
         div.nav div.homepage_nav a:hover{
           background-color: rgba(0, 0, 0, .05);
           cursor: pointer;
-          color: #333;
         }
 
 div.header{
@@ -158,13 +159,14 @@ div.introduce{
 }
 
     div.introduce div.frist_line p{
-      color: rgba(16, 34, 71, 0.8);
+      color: #5a5a5a;
+      font-weight: 500;
       display: inline;
     }
 
     div.introduce div.second_line p{
       font-size: 12px;
-      color: rgba(16, 34, 71, 0.5);
+      color: rgba(51,51,51,.4);
       margin: 16px auto;
       line-height: 16px;
     }
@@ -177,27 +179,27 @@ div.introduce{
     div.introduce div.opinion p{
       width: 600px;
       font-size: 14px;
-      color: rgba(16, 34, 71);
-      opacity: 0.8;
+      color: #5a5a5a;
+      letter-spacing: .6px;
       line-height: 28px;
     }
 
     div.introduce div.third_line p{
       font-size: 12px;
-      color: rgba(16, 34, 71, 0.5);
+      color: rgba(51,51,51,.4);
       margin: 100px auto 16px;
       line-height: 16px;
     }
 
     div.introduce div.fouth_line a{
       letter-spacing: 0.5px;
-      color: rgba(16, 34, 71, 0.8);
+      color: #5a5a5a;
       text-decoration: none;
       transition: all 150ms ease-out;
     }
 
         div.introduce div.fouth_line a:hover{
-          color: #4771c6;
+          color: #333;
           text-decoration: underline;
         }
 
@@ -233,8 +235,8 @@ div.design_content{
     div.design_content a.article{
       width: 340px;
       /* height: 240px; */
-      margin:12px 28px 56px;
-      padding: 0px;
+      margin:4px 20px 48px;
+      padding:8px;
       border-radius: 12px;
       transition: all 200ms ease-out;
     }
@@ -265,15 +267,16 @@ div.design_content{
 
         div.design_content a.article div.intro{
           font-size: 12px;
-          color: rgba(16, 34, 72, 0.5);
+          color: #5a5a5a;
         }
 
             div.design_content a.article div.intro p.title{
-              font-size: 14px;
+              font-size: 13px;
               font-weight: 500;
-              color: #3c3c3c;
+              color: #5a5a5a;
               margin-top: 20px;
               margin-bottom: 8px;
+              letter-spacing: .6px;
             }
 
             div.design_content a.article div.intro p{

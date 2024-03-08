@@ -45,6 +45,40 @@
       $('.design_display').children().eq($(this).index()).delay(800).trigger('play');
     });
 
+// 点击图片箭头切换上/下一张
+    $('div.turn_page_left').click(function(){
+      var x = $('.design_display').children('.active').index() - 1;
+      $('.design_display').children().removeClass('active');
+      $('.design_display').children().eq(x).addClass('active');
+      $('video').trigger('pause');
+      $('.design_display').children().eq(x).delay(800).trigger('play');
+      $('div.thumb_box').removeClass('thumb_box_hover');
+      $('li.designs').eq(x).children('div.thumb_box').addClass('thumb_box_hover');
+    });
+
+    $('div.turn_page_right').click(function(){
+      var y = $('.design_display').children('.active').index() + 1;
+      $('.design_display').children().removeClass('active');
+      $('.design_display').children().eq(y).addClass('active');
+      $('video').trigger('pause');
+      $('.design_display').children().eq(y).delay(800).trigger('play');
+      $('div.thumb_box').removeClass('thumb_box_hover');
+      $('li.designs').eq(y).children('div.thumb_box').addClass('thumb_box_hover');
+    });
+
+// hover 图片出左右移组件
+    $('div.design_display').hover(function(){
+      $('div.turn_page').addClass('turn_page_appear');
+    },function(){
+      $('div.turn_page').removeClass('turn_page_appear');
+    });
+
+    $('div.turn_page').hover(function(){
+      $('div.turn_page').addClass('turn_page_appear');
+    },function(){
+      $('div.turn_page').removeClass('turn_page_appear');
+    });
+
 // hover 箭头透明度增加
     $('.scroll_box').hover(function(){
       $(this).children('img').animate({opacity:'1'},0);
@@ -108,13 +142,13 @@
 
 // hover 底部导航小箭头漂移
     $('.previous').hover(function(){
-      $(this).children('#nav_previous').stop().animate({left:'-7px', opacity:'0.6'},200);
+      $(this).children('#nav_previous').stop().animate({left:'-7px', opacity:'1'},200);
     },function(){
       $(this).children('#nav_previous').stop().animate({left:'0px', opacity:'1'},200);
     });
 
     $('.next').hover(function(){
-      $(this).children('#nav_next').stop().animate({right:'-7px', opacity:'0.6'},200);
+      $(this).children('#nav_next').stop().animate({right:'-7px', opacity:'1'},200);
     },function(){
       $(this).children('#nav_next').stop().animate({right:'0px', opacity:'1'},200);
     });

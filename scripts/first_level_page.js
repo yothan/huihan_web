@@ -28,6 +28,6 @@ $(document).scroll(function(){
 // About_Me 文字动画函数
 function motto_move(){
     $('#motto-bg').delay(500).animate({paddingTop:'0px',opacity:'0.8'},700);
-    $('#motto').delay(500).animate({paddingTop:'30px',opacity:'1'},700);
+    $('#motto').delay(500).animate({paddingTop:'30px',opacity:'0.9'},700);
   };
   // $('#header_pre').load(motto_move());
